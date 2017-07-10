@@ -15,6 +15,9 @@
 		172E92711F131D6500A7E8A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172E926F1F131D6500A7E8A4 /* LaunchScreen.storyboard */; };
 		172E927C1F131D6500A7E8A4 /* slideViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 172E927B1F131D6500A7E8A4 /* slideViewTests.m */; };
 		172E92871F131D6500A7E8A4 /* slideViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 172E92861F131D6500A7E8A4 /* slideViewUITests.m */; };
+		172E92991F131E0600A7E8A4 /* UIView+BQLAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 172E92981F131E0600A7E8A4 /* UIView+BQLAdd.m */; };
+		172E929C1F131E8E00A7E8A4 /* BQLSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 172E929B1F131E8E00A7E8A4 /* BQLSlideView.m */; };
+		172E929F1F131EAF00A7E8A4 /* BQLCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 172E929E1F131EAF00A7E8A4 /* BQLCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		172E92821F131D6500A7E8A4 /* slideViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = slideViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		172E92861F131D6500A7E8A4 /* slideViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = slideViewUITests.m; sourceTree = "<group>"; };
 		172E92881F131D6500A7E8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		172E92971F131E0600A7E8A4 /* UIView+BQLAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BQLAdd.h"; sourceTree = "<group>"; };
+		172E92981F131E0600A7E8A4 /* UIView+BQLAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BQLAdd.m"; sourceTree = "<group>"; };
+		172E929A1F131E8E00A7E8A4 /* BQLSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQLSlideView.h; sourceTree = "<group>"; };
+		172E929B1F131E8E00A7E8A4 /* BQLSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BQLSlideView.m; sourceTree = "<group>"; };
+		172E929D1F131EAF00A7E8A4 /* BQLCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQLCard.h; sourceTree = "<group>"; };
+		172E929E1F131EAF00A7E8A4 /* BQLCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BQLCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		172E92601F131D6500A7E8A4 /* slideView */ = {
 			isa = PBXGroup;
 			children = (
+				172E92941F131DA900A7E8A4 /* BQLSlideView */,
 				172E92641F131D6500A7E8A4 /* AppDelegate.h */,
 				172E92651F131D6500A7E8A4 /* AppDelegate.m */,
 				172E92671F131D6500A7E8A4 /* ViewController.h */,
@@ -138,6 +148,35 @@
 				172E92881F131D6500A7E8A4 /* Info.plist */,
 			);
 			path = slideViewUITests;
+			sourceTree = "<group>";
+		};
+		172E92941F131DA900A7E8A4 /* BQLSlideView */ = {
+			isa = PBXGroup;
+			children = (
+				172E92961F131DA900A7E8A4 /* Source */,
+				172E92951F131DA900A7E8A4 /* Other */,
+			);
+			path = BQLSlideView;
+			sourceTree = "<group>";
+		};
+		172E92951F131DA900A7E8A4 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				172E92971F131E0600A7E8A4 /* UIView+BQLAdd.h */,
+				172E92981F131E0600A7E8A4 /* UIView+BQLAdd.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		172E92961F131DA900A7E8A4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				172E929A1F131E8E00A7E8A4 /* BQLSlideView.h */,
+				172E929B1F131E8E00A7E8A4 /* BQLSlideView.m */,
+				172E929D1F131EAF00A7E8A4 /* BQLCard.h */,
+				172E929E1F131EAF00A7E8A4 /* BQLCard.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +314,10 @@
 			files = (
 				172E92691F131D6500A7E8A4 /* ViewController.m in Sources */,
 				172E92661F131D6500A7E8A4 /* AppDelegate.m in Sources */,
+				172E929C1F131E8E00A7E8A4 /* BQLSlideView.m in Sources */,
+				172E92991F131E0600A7E8A4 /* UIView+BQLAdd.m in Sources */,
 				172E92631F131D6500A7E8A4 /* main.m in Sources */,
+				172E929F1F131EAF00A7E8A4 /* BQLCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +547,7 @@
 				172E928D1F131D6500A7E8A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		172E928E1F131D6500A7E8A4 /* Build configuration list for PBXNativeTarget "slideViewTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +556,7 @@
 				172E92901F131D6500A7E8A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		172E92911F131D6500A7E8A4 /* Build configuration list for PBXNativeTarget "slideViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +565,7 @@
 				172E92931F131D6500A7E8A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
