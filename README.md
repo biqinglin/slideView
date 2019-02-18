@@ -1,5 +1,5 @@
 # slideView
-三张卡片无限复用，最大程度节省对象开销 <br>
+三张卡片无限复用，利用设置frame实现的，当然啦！这个最好还是用collection做比较好 <br>
 ![image](http://occmuwiio.bkt.clouddn.com/show.gif)
 <br>
 原理：修改卡片frame
